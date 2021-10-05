@@ -13,6 +13,17 @@
   text-align: center;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+
+footer p {
+  margin-left: 20px;
+}
+
 .filler {
   height: 50px;
 }
@@ -79,6 +90,30 @@
   margin: 10px;
 }
 
+.trending .card button {
+  margin: 10px;
+  padding: 5px 15px;
+  background: rgba(255, 205, 182, 0.9);
+  border: none;
+  -webkit-box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+          box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.2em;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.trending .card button:hover {
+  background: #fdb99a;
+}
+
+.trending .card button a {
+  text-decoration: none;
+  color: black;
+}
+
 .card.flipped {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -109,6 +144,34 @@
 
 .card4 {
   background-image: url("../assets/math.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card5 {
+  background-image: url("../assets/history.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card6 {
+  background-image: url("../assets/biology.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card7 {
+  background-image: url("../assets/chemistry.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card8 {
+  background-image: url("../assets/physics.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

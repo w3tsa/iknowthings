@@ -1,0 +1,93 @@
+@import "reset";
+@import "variables";
+
+.container {
+  width: 95vw;
+  height: 100%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.filler {
+  height: 50px;
+}
+
+.inputSearch {
+  padding: 1em;
+  margin: 1em;
+  width: 90vw;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  border: thin solid lightgray;
+  font-family: $primary-font;
+  font-size: map-get($font-size, paragraph);
+  box-shadow: $box-shadow;
+}
+
+.trending {
+  //   border: thin solid black;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .card {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: $box-shadow;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    border-radius: 20px;
+
+    div {
+      backface-visibility: hidden;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+
+    p {
+      font-size: map-get($font-size, headline);
+      margin: 10px;
+    }
+  }
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  background-image: none;
+  height: 100%;
+}
+.card1 {
+  background-image: url("../assets/science.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card2 {
+  background-image: url("../assets/philosophy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card3 {
+  background-image: url("../assets/geography.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card4 {
+  background-image: url("../assets/math.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

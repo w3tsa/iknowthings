@@ -133,21 +133,21 @@ footer {
 }
 
 .card5 {
-  background-image: url("../assets/history.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/220px-Charles_Darwin_seated_crop.jpg");
   @include cardBgImage;
 }
 
 .card6 {
-  background-image: url("../assets/biology.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Stephen_Hawking.StarChild.jpg/220px-Stephen_Hawking.StarChild.jpg");
   @include cardBgImage;
 }
 
 .card7 {
-  background-image: url("../assets/chemistry.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nikolaus_Kopernikus.jpg/220px-Nikolaus_Kopernikus.jpg");
   @include cardBgImage;
 }
 
 .card8 {
-  background-image: url("../assets/physics.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Richard_Feynman_Nobel.jpg/220px-Richard_Feynman_Nobel.jpg");
   @include cardBgImage;
 }

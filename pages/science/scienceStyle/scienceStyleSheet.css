@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 95vw;
+  height: 100%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+
+footer p {
+  margin-left: 20px;
+}
+
+.filler {
+  height: 50px;
+}
+
+.inputSearch {
+  padding: 1em;
+  margin: 1em;
+  width: 90vw;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  border: thin solid lightgray;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  -webkit-box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+          box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+}
+
+.trending {
+  width: 80vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.trending .card {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  -webkit-box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+          box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.trending .card div {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.trending .card .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.trending .card p {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.trending .card button {
+  margin: 10px;
+  padding: 5px 15px;
+  background: rgba(255, 205, 182, 0.9);
+  border: none;
+  -webkit-box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+          box-shadow: 4px 4px 20px -12px rgba(0, 0, 0, 0.45);
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.2em;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.trending .card button:hover {
+  background: #fdb99a;
+}
+
+.trending .card button a {
+  text-decoration: none;
+  color: black;
+}
+
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-image: none;
+  height: 100%;
+}
+
+.front {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+}
+
+.front p {
+  color: white;
+}
+
+.card1 {
+  background-image: url("https://images.news18.com/ibnlive/uploads/2021/04/1618728765_einstein.jpg?im=FitAndFill,width=1200,height=900");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/220px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card3 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marie_Curie_c._1920s.jpg/220px-Marie_Curie_c._1920s.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card4 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg/220px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card5 {
+  background-image: url("../assets/history.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card6 {
+  background-image: url("../assets/biology.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card7 {
+  background-image: url("../assets/chemistry.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card8 {
+  background-image: url("../assets/physics.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*# sourceMappingURL=scienceStyleSheet.css.map */
